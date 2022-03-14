@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../image/bg.jpg);
+    background-size: cover;
+}
+
+.home .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.home .content h2 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.home .content p {
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.btn {
+    font-size: 1em;
+    color: #fff;
+    background: #f7b731;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #f7b731;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header .navigation li a:hover {
+    color: #f7b731;
+}
+
+article {
+    padding: 100px;
+}
+
+/* About */
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.title-text {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.title-text span {
+    color: #f7b731;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+}
+
+.row .col50 .imgBx img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Destination */
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.destination {
+    background: #fafafa;
+}
+
+.destination .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.destination .content .card {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.destination .content .card .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.destination .content .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destination .content .card .text {
+    padding: 15px 0 5px;
+    background: #fff;
+}
+
+.destination .content .card .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+/* Category */
+.category .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.category .content .card {
+    text-align: center;
+    width: 250px;
+    margin: 10px;
+}
+
+.category .content .card .imgBx {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.category .content .card .imgBx img {
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+}
+
+.category .content .card .text {
+    padding: 20px 0 5px;
+}
+
+.category .content .card .text p {
+    margin-bottom: 60px;
+}
+
+/* Testimoni */
+.testimonials {
+    background: url(../image/bg2.jpg);
+    background-size: cover;
+}
+
+.white .title-text,
+.white p {
+    color: #fff;
+}
+
+.testimonials .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.testimonials .content .card {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .content .card .imgBx {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.testimonials .content .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials .content .card .text {
+    text-align: center;
+}
+
+.testimonials .content .card .text p {
+    color: #666;
+    font-style: italic;
+}
+
+.testimonials .content .card .text h3 {
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: #f7b731;
+    font-weight: 600;
+}
+
+/* Contact */
+.flex-container {
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contact {
+    background: url(../image/bg3.jpg);
+    background-size: cover;
+}
+
+.contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin: 50px 50px;
+}
+
+.contactForm h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #f7b731;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 6px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 200px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.profile {
+    width: 340px;
+    margin: 50px 50px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile .imgBx {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profile .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table tr th {
+    text-align: left;
+    padding: 5px 15px;
+}
+
+/* Footer */
+footer {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+footer p {
+    color: #333;
+}
+
+footer a {
+    color: #f7b731;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .navigation {
+        display: none;
+    }
+
+    header .navigation.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    header .navigation li {
+        margin-left: 0;
+    }
+
+    header .navigation li a {
+        color: #111;
+        font-size: 1.6em;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../image/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active {
+        background: url(../image/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .header.sticky .menuToggle {
+        filter: invert(1);
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    .home .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+
+    .row .col50 .imgBx {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    .destination .content {
+        margin-top: 20px;
+    }
+
+    .destination .content .card {
+        margin: 10px;
+    }
+
+    .destination .content .card .imgBx {
+        height: 260px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .title-text {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+
+    .testimonials .content .card {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contactForm {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .contactForm .inputBox {
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .home .content h2 {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
+
+/* Scroll Back Top */
+.scroll {
+    cursor: pointer;
+    padding: 10px 15px;
+    position: fixed;
+    bottom: 20px;
+    right: -80px;
+    border-radius: .4rem;
+    background: #f7b831ad;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    transition: 300ms;
+}
+
+.scroll i {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-shadow: 0 0 2px #fff;
+}
+
+.scroll:hover {
+    background-color: #f7b731;
+}
+
+.visible {
+    right: 20px;
+    transition: all 400ms;
+}
